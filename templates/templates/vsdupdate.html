@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title manager home></title>
+        <link rel="stylesheet" type="text/css" href="../static/signuponly.css">
+    </head>
+<body>
+
+<div class="vremove">
+ <form  id="vsdupdate" method="POST" action="{{url_for('vsdupdate')}}">
+ <div class="left">
+    <div class="msg">{{ msg }}</div>
+    <input type="number" id="vehiclenumber" name="vno" placeholder="vehiclenumber">
+    <p>enter present startdate of vehicle:</p>
+    <input type="date" id="start_date" name="bsd" placeholder="start date">
+    <br><br>
+    <p>enter startdate you want to update it to:</p>
+    <input type="date" id="start_date" name="sd" placeholder="start date">
+    <input type="submit" form="vsdupdate" name="removevehicle" value="UPDATE DATE" />
+ </div>
+ </form>
+</div>
+</body>
+</html>

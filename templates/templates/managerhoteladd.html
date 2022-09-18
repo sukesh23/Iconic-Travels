@@ -1,0 +1,36 @@
+<!DOCTYPE html>    
+<html>    
+<head>    
+    <title>Signup form</title>    
+    <link rel="stylesheet" type="text/css" href="../static/signuponly.css">  
+    <style>
+      body{
+          background-image: url('../static/images/Tourist-Places.jpg');
+      }
+  </style>    
+</head>    
+<body>  
+<div class="addhotel">
+  <form  id=addhotel method="POST" action="{{url_for('addhotel')}}">
+  <div class="left">
+    <h1>ADD HOTEL</h1>
+    <br><br>
+    <div class="msg">{{ msg }}</div>
+  <input type="text" id="hotelname" name="hotelname" placeholder="hotelname" >
+  <br><br>
+    <input type="text" id="address" name="address" placeholder="address" />
+    <br><br>
+    <input type="text" id="place" name="place" placeholder="place" />
+    <br><br>
+    <input type="number" id="rating" name="rating" placeholder="rating" step="0.1" />
+    <br><br>
+    <input type="number" id="roomrent" name="roomrent" placeholder="room rent">
+   <br><br>
+    <input type="number" id="numberofrooms" name="numberofrooms" placeholder="total rooms">
+    <br><br>
+    
+    <input type="submit" form="addhotel" name="addhotel" value="add hotel" />
+  </form>
+  </div>
+  </head>
+  </html>

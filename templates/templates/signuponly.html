@@ -1,0 +1,40 @@
+<!DOCTYPE html>    
+<html>    
+<head>    
+    <title>Signup form</title>    
+    <link rel="stylesheet" type="text/css" href="../static/signuponly.css">  
+    <style>
+      body{
+        background-image: url('../static/images/signupony3.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        background-size: cover;
+        background-size: 100%;
+      }
+  </style>    
+</head>    
+<body>  
+<div class="signuponly">
+  <form  id=signuponly method="POST" action="{{url_for('signuponly')}}">
+  <div class="left">
+    <div class="msg">{{ msg }}</div>
+    <h1 style="text-align: center;">Sign up</h1>
+    <input type="text" name="username" placeholder="username" />
+    <input type="password" name="password" placeholder="password" />
+    <input type="password" name="confirm password" placeholder="confirm password" />
+    <br><br>
+    <p1 style="color:rgb(255, 255, 255); font-weight: 300;"> Date Of Birth:</p1><br>
+    <input type="date" name="dob" placeholder="dob" />
+    <br><br>
+  <p style="color: cornsilk; font-weight: 500;">Gender:</p>
+  <input type="radio" id="male" name="gender" value="male">
+  <label for="male" style="color: white; font-weight: 500;">MALE</label><br>
+  <input type="radio" id="female" name="gender" value="female">
+  <label for="female" style="color: white; font-weight: 500;">FEMALE</label><br>
+<br>
+    <input type="number" name="ph" placeholder="Phone Number" />
+    <input type="submit" form="signuponly" name="signup_submit" value="Sign up" />
+  </form>
+  </div>
+  </head>
+  </html>

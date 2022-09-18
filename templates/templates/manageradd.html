@@ -1,0 +1,37 @@
+<!DOCTYPE html>    
+<html>    
+<head>    
+    <title>Signup form</title>    
+    <link rel="stylesheet" type="text/css" href="../static/signuponly.css">  
+    <style>
+      body{
+          background-image: url('../static/images/Tourist-Places.jpg');
+      }
+  </style>    
+</head>    
+<body>  
+<div class="signuponly">
+  <form  id=vadd method="POST" action="{{url_for('vadd')}}">
+  <div class="left">
+    <h1>ADD NEW VEICHLE</h1>
+    <br><br>
+    <div class="msg">{{ msg }}</div>
+  <input type="number" id="vehiclenumber" name="vehiclenumber" placeholder="veichle number" >
+  <br><br>
+  <input type="number" id="capacity" name="capacity"  placeholder="capacity" >
+  <br><br>
+   <input type=" number" id="cost" name="cost" placeholder="cost">
+   <br><br>
+    <input type="text" name="startplace" placeholder="startplace" />
+    <br><br>
+    <input type="text" name="reachplace" placeholder="reachplace" />
+    <br><br>
+    <input type="text" name="type" placeholder="type" />
+    <br><br>
+    <input type="date" id="start_date" name="start_date">
+    <br><br>
+    <input type="submit" form="vadd" name="veichleadd" value="add_veichle" />
+  </form>
+  </div>
+  </head>
+  </html>

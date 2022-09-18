@@ -1,0 +1,154 @@
+<!DOCTYPE html>    
+<html>    
+<head>    
+    <title>ENTER TRIP DETAILS</title>    
+    <link rel="stylesheet" type="text/css" href="../static/customerentry.css"> 
+    <style>
+        body{
+            background-image: url('../static/images/signuponly.jpg');
+        }
+    </style>   
+</head>    
+<body> 
+  
+    <div class="form_wrapper">
+        <div class="form_container">
+          <div class="title_container">
+            
+          </div>
+          <div class="updatepackages">    
+            <form id="updatepackages" method="POST" action="{{url_for('managerhome')}}">    
+                   <br>
+
+                   <h2>3 day plan</h2><br><br>
+
+              <input type="number" name="cost1" id="cost1"  placeholder="cost of trip"><br><br>
+      <div class="input_field select_option">
+                      <select id="pickup point1" name="pickup point1">
+                        <option>pickup point</option>
+                        <option value="HYDERABAD">HYDERABAD</option>
+                        <option value="CHENNAI">CHENNAI</option>
+                      </select>
+                     
+                    
+                <div class="input_field select_option">
+                      <select id="DROP point1" name="DROP point1">
+                        <option>DROP point</option>
+                        <option value="HYDERABAD">HYDERABAD</option>
+                        <option value="CHENNAI">CHENNAI</option>
+                      </select>
+                     
+                    
+                
+                    <div class="input_field select_option">
+                      <select id="startmode of transport1" name="startmode of transport1">
+                        <option>startmode of transport</option>
+                        <option value="flight">flight</option>
+                        <option value="bus">bus</option>
+                        <option value="train">train</option>
+                      </select>
+                     
+                    
+                <div class="input_field select_option">
+                      <select id="returnmode of transport1" name="returnmode of transport1">
+                        <option>returnmode of transport</option>
+                        <option value="flight">flight</option>
+                        <option value="bus">bus</option>
+                        <option value="train">train</option>
+                      </select>
+                     
+                    <br><br><br>
+
+                    <h2>5 day plan</h2>
+                    <input type="number" name="cost2" id="cost2"  placeholder="cost of trip"><br><br>
+                    <div class="input_field select_option">
+                                    <select id="pickup point2" name="pickup point2">
+                                      <option>pickup point</option>
+                                      <option value="HYDERABAD">HYDERABAD</option>
+                                      <option value="CHENNAI">CHENNAI</option>
+                                    </select>
+                                   
+                                  
+                              <div class="input_field select_option">
+                                    <select id="DROP point2" name="DROP point2">
+                                      <option>DROP point</option>
+                                      <option value="HYDERABAD">HYDERABAD</option>
+                                      <option value="CHENNAI">CHENNAI</option>
+                                    </select>
+                                   
+                                  
+                              
+                                  <div class="input_field select_option">
+                                    <select id="startmode of transport2" name="startmode of transport2">
+                                      <option>startmode of transport</option>
+                                      <option value="flight">flight</option>
+                                      <option value="bus">bus</option>
+                                      <option value="train">train</option>
+                                    </select>
+                                   
+                                  
+                              <div class="input_field select_option">
+                                    <select id="returnmode of transport2" name="returnmode of transport2">
+                                      <option>returnmode of transport</option>
+                                      <option value="flight">flight</option>
+                                      <option value="bus">bus</option>
+                                      <option value="train">train</option>
+                                    </select>
+                                   
+                                  <br><br><br>
+
+
+                                  <h2>7 day plan</h2>
+                                  <input type="number" name="cost3" id="cost3"  placeholder="cost of trip"><br><br>
+      <div class="input_field select_option">
+                      <select id="pickup point3" name="pickup point3">
+                        <option>pickup point</option>
+                        <option value="HYDERABAD">HYDERABAD</option>
+                        <option value="CHENNAI">CHENNAI</option>
+                      </select>
+                     
+                    
+                <div class="input_field select_option">
+                      <select id="DROP point3" name="DROP point3">
+                        <option>DROP point</option>
+                        <option value="HYDERABAD">HYDERABAD</option>
+                        <option value="CHENNAI">CHENNAI</option>
+                      </select>
+                     
+                    
+                
+                    <div class="input_field select_option">
+                      <select id="startmode of transport3" name="startmode of transport3">
+                        <option>startmode of transport</option>
+                        <option value="flight">flight</option>
+                        <option value="bus">bus</option>
+                        <option value="train">train</option>
+                      </select>
+                     
+                    
+                <div class="input_field select_option">
+                      <select id="returnmode of transport3" name="returnmode of transport3">
+                        <option>returnmode of transport</option>
+                        <option value="flight">flight</option>
+                        <option value="bus">bus</option>
+                        <option value="train">train</option>
+                      </select>
+                     
+                    <br><br><br>
+                <input class="button" type="submit" value="update" form="updatepackages" />
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</body> 
+</html>
+
+
+
+
+
+
+
+      

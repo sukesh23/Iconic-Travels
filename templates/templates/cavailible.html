@@ -1,0 +1,67 @@
+<!DOCTYPE html>    
+<html>    
+<head>    
+    <title>HURRAY YOU CAN BOOK NOW</title> 
+    <style>
+        body{
+            background-color: cornflowerblue;
+        }
+        .login{
+            margin-left:500px;
+            margin-top:180px;
+            color:rgb(0, 0, 0);
+            font-size:20px;
+        }
+    
+        #book:hover {background-color:#5ab8d4 ;}
+
+    #book{
+      font-size:16px;
+    }
+    </style>  
+
+    
+    
+</head>    
+<body>
+    <div class="login">
+    <p1>START VEHICLE NUMBER:</p1>
+    <p2 style="color: rgb(51, 255, 0); font-weight: 400;">{{account}}</p2><br>
+    <p3>your seats is/are </p3>
+    <p4 style="color: rgb(0, 255, 42); font-weight: 400;">{{msg1}}</p4>
+    <br><br>
+    <p1>YOUR RETURN VEHICLE NUMBER:</p1>
+    <P2 style="color: rgb(0, 255, 0); font-weight: 400;">{{touple}}</P2><br>
+    <P3>your seats is/are</P3>
+    <p4 style="color: rgb(30, 255, 0); font-weight: 400;">{{msg2}}</p4><br><br>
+    <p1>your hotel details are:</p1>
+    <p1>hotel name:</p1>
+    <p2 style="color: rgb(0, 255, 13); font-weight: 400;">{{msg3[0]}}</p2><br>
+    <p1>address of hotel:</p1>
+    <p2 style="color: rgb(0, 255, 34); font-weight: 400;">{{msg3[1]}}</p2><br>
+    <p1>rating of hotel:</p1>
+    <p2 style="color: rgb(21, 255, 0); font-weight: 400;">{{msg3[3]}}</p2><br>
+    <p3>room number(s) of hotel:</p3>
+    <p4 style="color: rgb(0, 255, 21); font-weight: 400;">{{msg4}}</p4><br><br>
+    <p1>total cost of the trip is:</p1>
+    <p2 style="color: rgb(8, 233, 45); font-weight: 10000;">{{msg5}}</p2><br>
+    <br>
+    <br>
+    <br>
+    <button id="book" onclick="myfunction()">BOOK NOW</button><br><br>
+    <button id="book" onclick="NOINTREST()">MAY BE LATER</button><br><br>
+    <button id="book" onclick="tryanother()">TRY ANOTHER TRIP</button>
+    </div>
+    <script>
+        function myfunction() {
+            location.replace("customerbook")
+        }
+        function NOINTREST() {
+            location.replace("customerhome")
+        }
+        function tryanother() {
+            location.replace("customerentry")
+        }
+    </script>
+</body>
+</html>

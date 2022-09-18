@@ -1,0 +1,51 @@
+<!DOCTYPE html>    
+<html>    
+<head>    
+    <title>reset form </title>    
+    <link rel="stylesheet" type="text/css" href="../static/reset.css">  
+    <style>
+      body{
+        background-image: url('../static/images/signupony3.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+         background-position: center ;
+         background-size: cover;
+      }
+  </style>    
+</head>    
+<body>  
+<div class="reset">
+  <form  id=RESET method="POST" action="{{url_for('reset')}}">
+  <div class="left">
+      <h1>RESET FORM</h1>
+    <div class="msg">{{ msg }}</div>
+    <p1 style="color:rgb(24, 138, 231); font-weight: 600;"> SUNDAY:</p1>
+    <br>
+    <input type="date" name="d0" placeholder="do" />
+    <br><br>
+    <p1 style="color:rgb(24, 138, 231); font-weight: 600;"> MONDAY:</p1>
+    <br>
+    <input type="date" name="d1" placeholder="do" />
+    <br><br>
+    <p1 style="color:rgb(24, 138, 231); font-weight: 600;"> TUESDAY:</p1>
+    <input type="date" name="d2" placeholder="do" />
+    <br><br>
+    <p1 style="color:rgb(24, 138, 231); font-weight: 600;"> WEDNESDAY:</p1>
+    <input type="date" name="d3" placeholder="do" />
+    <br><br>
+   <p1 style="color:rgb(24, 138, 231); font-weight: 600;"> THURSDAY:</p1>
+    <input type="date" name="d4" placeholder="do" />
+    <br><br>
+    <p1 style="color:rgb(24, 138, 231); font-weight: 600;"> FRIDAY:</p1>
+    <br>
+    <input type="date" name="d5" placeholder="do" />
+    <br><br>
+    <p1 style="color:rgb(24, 138, 231); font-weight: 600;"> SATURDAY:</p1>
+    <input type="date" name="d6" placeholder="do" />
+    <br><br>
+    
+    <input type="submit" form="RESET" name="signup_submit" value="reset" />
+  </form>
+  </div>
+  </head>
+  </html>

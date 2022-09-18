@@ -1,0 +1,34 @@
+<!DOCTYPE html>    
+<html>    
+<head>    
+    <title>Signup form</title>    
+    <link rel="stylesheet" type="text/css" href="../static/signuponly.css">     
+</head>    
+<body>  
+<div class="vupdate">
+  <form  id=vupdate method="POST" action="{{url_for('vupdate')}}">
+  <div class="left">
+    <h1>UPDATE VEICHLE</h1>
+    <br><br>
+    <div class="msg">{{ msg }}</div>
+  <input type="number" id="vehiclenumber" name="vehiclenumber" placeholder="vehicle number" >
+  <br><br>
+    <input type="text" name="startplace" placeholder="startplace" />
+    <br><br>
+    <input type="text" name="reachplace" placeholder="reachplace" />
+    <br><br>
+    <input type=" number" id="cost" name="cost" placeholder="cost">
+   <br><br>
+   <p style="color:blue ; font-weight: 500;">you can enter both or any one of the present start date or place</p>
+   <br><br>
+   <p style="color:blue ; font-weight: 500;">enter present start_date of vehicle:</p>
+    <input type="date"  name="startdate" placeholder="present startplace of vehicle">
+    <br><br>
+    <p style="color:blue ; font-weight: 500;">enter present start place of vehicle</p>
+    <input type="text" name="psp" placeholder="present startplace of vehicle">
+    <br><br>
+    <input type="submit" form="vupdate" name="vehicleupdate" value="update_vehicle" />
+  </form>
+  </div>
+  </head>
+  </html>

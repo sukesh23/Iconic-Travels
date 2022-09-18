@@ -1,0 +1,23 @@
+<!DOCTYPE html>    
+<html>    
+<head>    
+    <title>Signup form</title>    
+    <link rel="stylesheet" type="text/css" href="../static/signuponly.css">     
+</head>    
+<body>  
+<div class="removehotel">
+  <form  id=removehotel method="POST" action="{{url_for('removehotel')}}">
+  <div class="left">
+    <h1>REMOVE HOTEL</h1>
+    <br><br>
+    <div class="msg">{{ msg }}</div>
+    <br>
+  <input type="text" id="placename" name="hotelname" placeholder="hotelname" >
+  <br><br>
+    <input type="text" name="place" placeholder="place" />
+    <br><br>
+    <input type="submit" form="removehotel" name="removehotel" value="remove hotel" />
+  </form>
+  </div>
+  </head>
+  </html>

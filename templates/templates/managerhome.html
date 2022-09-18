@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title manager home></title>
+        <link rel="stylesheet" type="text/css" href="../static/signuponly.css">
+    </head>
+<body>
+
+<div class="managerhome">
+ <form  id="managerhome" method="POST" action="{{url_for('logout')}}">
+ <div class="left">
+    <div class="msg">{{ msg }}</div>
+<p>hello manager</p>
+<a href="vadd" form=managerhome>add veichle</a>
+<br><br>
+<a href="vdelete" form=managerhome>remove veichle</a>
+<br><br>
+<a href="vupdatebefore" form=managerhome>update veichle</a>
+<br><br>
+<a href="addplace" form=managerhome>add place</a>
+<br><br>
+<a href="addhotel" form=managerhome>add hotel</a>
+<br><br>
+<a href="removehotel" form=managerhome>remove hotel</a>
+<br><br>
+<a href="updatepackages" form=managerhome>update packages</a>
+<br><br>
+<button type="submit" form="managerhome" value="Submit" id="logout">Logout</button>
+<br><br>
+
+</div>
+
+ </form>
+ <button onclick="myfunction()">RESET</button>
+   <script>
+       function myfunction() {
+           location.replace("reset")
+       }
+   </script>
+</div>
+</body>
+</html>

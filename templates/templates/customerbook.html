@@ -1,0 +1,50 @@
+<!DOCTYPE html>    
+<html>    
+<head>    
+       
+    <link rel="stylesheet" type="text/css" href="../static/loginonly.css"> 
+    <style>
+    body{
+        background-image: url('../static/images/cavalible.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+    .booking{
+            margin-left:20%;
+            margin-top: 5%;;
+            color:rgb(252, 252, 252);
+            font-size:20px;
+        }
+</style>
+</head>    
+<body>
+    <div class="booking" >
+    <form id=booking method='POST' action="{{url_for('customerhome')}}">
+    <H1>YOUR TRIP HAS BEEN BOOKED SUCCESSFULLY</H1>
+    <P1>your booking id is:</P1>
+    <p2 style="color: rgb(251, 255, 0); font-weight: 400;">{{booking_id}}</p2><br><br>
+    <p1>START VEHICLE NUMBER:</p1>
+    <p2 style="color: rgb(229, 255, 0); font-weight: 400;">{{account}}</p2><br>
+    <p3>your seats are from:</p3>
+    <p4 style="color: rgb(208, 255, 0); font-weight: 400;">{{msg1}}</p4>
+    <br><br>
+    <p1>YOUR RETURN VEHICLE NUMBER:</p1>
+    <P2 style="color: rgb(238, 255, 0); font-weight: 400;">{{touple}}</P2><br>
+    <P3>your seats are from:</P3>
+    <p4 style="color: rgb(238, 255, 0); font-weight: 400;">{{msg2}}</p4><br><br>
+    <p1>your hotel details are:</p1><br>
+    <p1>hotel name:</p1>
+    <p2 style="color: rgb(238, 255, 0); font-weight: 400;">{{msg3[0]}}</p2><br>
+    <p1>address of hotel:</p1>
+    <p2 style="color: rgb(251, 255, 0); font-weight: 400;">{{msg3[1]}}</p2><br>
+    <p1>rating of hotel:</p1>
+    <p2 style="color: rgb(255, 251, 0); font-weight: 400;">{{msg3[3]}}</p2><br>
+    <p3>room numbers of hotel:</p3>
+    <p4 style="color: rgb(238, 255, 0); font-weight: 400;">{{msg4}}</p4><br><br>
+    <p1>total cost of the trip is:</p1>
+    <p2 style="color: rgb(217, 255, 0); font-weight: 400;">{{msg5}}</p2><br>
+    <input type="submit" form="booking" name="booknow" value="GO BACK TO HOME" />
+    </form>
+    </div>
+</body>

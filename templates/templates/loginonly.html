@@ -1,0 +1,39 @@
+<!DOCTYPE html>    
+<html>    
+<head>    
+    <title>Login Form</title>    
+    <link rel="stylesheet" type="text/css" href="../static/loginonly.css"> 
+    <style>
+        
+        body{
+            background-image: url('../static/images/loginonly1.jpg');
+            background-repeat: no-repeat;
+            background-size: auto;
+        }
+    </style>
+    
+</head>    
+<body>    
+       
+    <div class="login">    
+    <form id="login" method="POST" action="{{url_for('login')}}">  
+        <h2>LOGIN PAGE</h2><br>   
+        <div class="msg">{{ msg }}</div>
+        <label id="label"><b>EMAIL ID  
+        </b>    
+        </label>    
+        <input type="text" name="EMAIL" id="EMAIL" placeholder="email">    
+        <br><br>    
+        <label id="label"><b>Password     
+        </b>    
+        </label>    
+        <input type="Password" name="Password" id="Password" placeholder="Password">    
+        <br><br>    
+        <button type="submit" form="login" value="Submit" id="log">LOGIN</button>     
+        <br><br>    
+   <a href="logon" form="login">Signup</a><br>
+   <a href="forgotpassword" form="login">Forgot Password?</a>
+    </form>     
+</div>
+</body>
+</html>

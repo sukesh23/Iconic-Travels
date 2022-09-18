@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title manager home></title>
+        <link rel="stylesheet" type="text/css" href="../static/signuponly.css">
+    </head>
+<body>
+
+<div class="vremove">
+ <form  id="vremove" method="POST" action="{{url_for('vdelete')}}">
+ <div class="left">
+    <div class="msg">{{ msg }}</div>
+    <input type="number" id="vehiclenumber" name="vehiclenumber" placeholder="vehiclenumber">
+    <input type="date" id="start_date" name="start_date" placeholder="start date">
+    <br><br>
+    <input type="submit" form="vremove" name="removevehicle" value="removevehicle" />
+ </div>
+ </form>
+</div>
+</body>
+</html>
